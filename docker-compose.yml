@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tictactoe:
+    image: ${DOCKER_REGISTRY-}tictactoe
+    build:
+      context: .
+      dockerfile: Dockerfile
