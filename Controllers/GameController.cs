@@ -11,6 +11,12 @@ namespace TicTacToe.Controllers
         public IActionResult Move([FromBody] Move move)
         {
             var gameBoard = new GameBoard();
+
+            if (System.IO.File.Exists("data.json"))
+            {
+                System.IO.File.Delete("data.json");
+            }
+
             if (!System.IO.File.Exists("data.json"))
             {
                 gameBoard.Save();
