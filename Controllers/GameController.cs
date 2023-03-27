@@ -78,7 +78,7 @@ namespace TicTacToe.Controllers
                     gameBoard.ResetBoard();
                     gameBoard.Save();
 
-                    return Ok($"Player {currentPlayer} has won!");
+                    return Ok($"Player {currentPlayer} has won! The game restarted.");
                 }
             }
 
@@ -118,7 +118,7 @@ namespace TicTacToe.Controllers
                     gameBoard.ResetBoard();
                     gameBoard.Save();
 
-                    return Ok($"Player {currentPlayer} has won!");
+                    return Ok($"Player {currentPlayer} has won! The game restarted.");
                 }
             }
 
@@ -157,7 +157,7 @@ namespace TicTacToe.Controllers
                 gameBoard.ResetBoard();
                 gameBoard.Save();
 
-                return Ok($"Player {currentPlayer} has won!");
+                return Ok($"Player {currentPlayer} has won! The game restarted.");
             }
 
 
@@ -195,7 +195,7 @@ namespace TicTacToe.Controllers
                 gameBoard.ResetBoard();
                 gameBoard.Save();
 
-                return Ok($"Player {currentPlayer} has won!");
+                return Ok($"Player {currentPlayer} has won! The game restarted.");
             }
 
             bool isTie = true;
